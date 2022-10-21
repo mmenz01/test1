@@ -1,0 +1,119 @@
+@font-face {
+	font-family: "BebasNeue";
+	src: url(Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+/* References Jeff's Bootstrap demo & HTML of https://sleepcoacher.cs.brown.edu/ to do below */
+.top-pane {
+	background: url(SalonImage2.jpeg) center fixed; 
+	/* ^ Image from https://notapaperhouse.com/only-one-client-at-a-time-in-this-minimal-hair-salon/ */
+	background-size: cover;
+	height: 60vh;
+}
+
+/* .hairstyle {
+	width: 8rem;
+	height: auto;
+	object-fit: cover;
+} */
+
+#hairstyles-gallery {
+	margin-top: 1rem;
+	/* background-color: rgb(231, 231, 231); */
+}
+
+* {
+	margin: 0;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+#about-us-info-standard {
+	margin-top: 1rem;
+	background-color: rgb(204, 204, 204);
+	font-size: smaller;
+}
+
+#address {
+	text-align: right;
+}
+
+#about-us, #address {
+	margin: 0.6rem;
+	max-width: 45%;
+}
+
+.btn-secondary {
+	background-color: #fffac8 !important; 
+	opacity: 100% !important;
+	color: black !important;
+	/* Learned that important was necessary to override bootstrap default from https://stackoverflow.com/questions/28261287/how-to-change-btn-color-in-bootstrap */
+}
+
+#main-button {
+	margin-left:2rem;
+	margin-right:2rem;
+	font-family:"BebasNeue";
+}
+
+#main-button-2 {
+	width: 80%;
+	max-width: 30rem;
+	margin-top: 2rem;
+	margin-bottom:2rem;
+	margin-left:2rem;
+	margin-right:2rem;
+	font-family:"BebasNeue";
+}
+
+p, h6 {
+	margin: 0;
+}
+
+.navbar-brand {
+	/* margin-left: 1rem; */
+	font-family:"BebasNeue";
+	background-color: #fffac8 ;
+	border-radius: 15%;
+}
+
+#telephone-symbol {
+	max-width: 4rem;
+	height:auto;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:1rem;
+	margin-bottom:1rem;
+}
+
+.social-btn{
+	margin-top:0.5rem;
+}
+
+.social {
+	width: 1rem;
+	height: auto;
+}
+
+#about-us-info-phone {
+	margin-top: 1rem;
+	background-color: rgb(204, 204, 204);
+	font-size: smaller;
+	text-align: center;
+}
+
+#address-phone {
+	margin: 0.6rem;
+}
+
+#about-us-phone {
+	margin: 0.6rem;
+}

@@ -1,0 +1,148 @@
+
+<!-- Note: I used bootstrap and made extensive use of Bootstrap's components -->
+
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moss Hair Salon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    
+    <!-- Navbar code: I wrote this using Bootstrap documentation & Jeff's Bootstrap video -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h1>Moss Hair Salon</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="navbar-item"><a class="nav-link"><b>Home</b></a></li>
+            <li class="navbar-item"><a class="nav-link">Hair Services</a></li>
+            <li class="navbar-item"><a class="nav-link">Hair Products</a></li>
+            <li class="navbar-item"><a class="nav-link">Gallery</a></li>
+            <li class="navbar-item"><a class="nav-link">Our Staff</a></li>
+            <li class="navbar-item"><a class="nav-link">Reviews</a></li>
+            <li class="navbar-item"><a class="nav-link">Policies & Info</a></li>
+            <li class="navbar-item"><a class="nav-link">Contact Us</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- References Jeff's Bootstrap demo & HTML of https://sleepcoacher.cs.brown.edu/ to do below -->
+    <!-- <div class="d-flex flex-row justify-content-center align-items-center top-pane">
+      <button type="button" class="btn btn-secondary collapse d-lg-block" disabled>Rhode Island's <br> Premier Hair Salon</button>
+
+      <button id="main-button" type="button" class="btn btn-lg btn-light btn-outline-dark"><img id="telephone-symbol"src="telephone.png"><p><h2>Call to Book</h2></p>123-456-7890</button>
+
+      <button type="button" class="btn btn-secondary collapse d-lg-block" disabled>Tuesday-Saturday <br> 9am-5pm</button>
+
+    </div> -->
+
+    <!-- <div class="d-flex flex-column justify-content-center align-items-center top-pane">
+      <button type="button" class="btn btn-secondary" disabled>Rhode Island's <br> Premier Hair Salon</button>
+
+      <button id="main-button-2" type="button" class="btn btn-lg btn-light btn-outline-dark col-12"><img id="telephone-symbol"src="telephone.png"><p><h2>Call to Book</h2></p>123-456-7890</button>
+
+      <button type="button" class="btn btn-secondary" disabled>Tuesday-Saturday <br> 9am-5pm</button>
+
+    </div> -->
+
+
+    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center top-pane">
+      <!-- Figured out way to change flex direction @ breakpoints using https://stackoverflow.com/questions/63568371/bootstrap-change-flex-direction-at-certain-breakpoints -->
+      <button type="button" class="btn btn-secondary" disabled>Rhode Island's <br> Premier Hair Salon</button>
+
+      <button id="main-button-2" type="button" class="btn btn-lg btn-light btn-outline-dark col-12"><img id="telephone-symbol"src="telephone.png"><p><h2>Call to Book</h2></p>123-456-7890</button>
+
+      <button type="button" class="btn btn-secondary" disabled>Open Tuesday-Saturday <br> 9am-5pm</button>
+
+    </div>
+
+    <!-- <div id="hairstyles-gallery" class="d-flex flex-row align-items-center col-sm-4">
+      <div>
+        <img class="hairstyle" src="hairstyles/hair1.jpg">
+      </div>
+      <div>
+        <img class="hairstyle" src="hairstyles/hair2.jpg">
+      </div>
+      <div>
+        <img class="hairstyle" src="hairstyles/hair3.jpg">
+      </div>
+      <div>
+        <img class="hairstyle" src="hairstyles/hair4.jpg">
+      </div>
+    </div> -->
+
+    <!-- Collapse code: used Bootrasp documentation and technique from https://stackoverflow.com/questions/52348303/collapse-bootstrap-card-on-sm-and-or-md-screens -->
+    <div id="hairstyles-gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-4 col-lg-2">
+            <img class="img-fluid" src="hairstyles/hair1.jpg">
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2">
+            <img class="img-fluid" src="hairstyles/hair2.jpg">
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2 collapse d-lg-block">
+            <img class="img-fluid" src="hairstyles/hair3.jpg">
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2 collapse d-lg-block">
+            <img class="img-fluid" src="hairstyles/hair4.jpg">
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2 collapse d-lg-block">
+            <img class="img-fluid" src="hairstyles/hair5.jpg">
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2 collapse d-lg-block collaspe d-md-block">
+            <img class="img-fluid" src="hairstyles/hair6.jpg">
+          </div>
+        </div>
+      </div>
+      <div>
+    </div>
+
+    <div id="about-us-info-standard" class="d-none d-sm-block">
+      <div class="d-flex justify-content-between">
+        <div id="about-us">
+          <h6>About Us</h6> Moss Hair Salon is the premier hair salon of Rhode Island, consistently recognized by Elle Magazine as one of the top hair salons in America. We offer a full suite of hair styling, cutting, and coloring services.
+          <br>
+          <button type="button" class="btn btn-light btn-outline-dark social-btn"><img class="social" src="instagram.png"></button>
+          <button type="button" class="btn btn-light btn-outline-dark social-btn"><img class="social" src="facebook.png"></button>
+          <button type="button" class="btn btn-light btn-outline-dark social-btn"><img class="social" src="yelp.png"></button>
+        </div>
+        <div id="address">
+          <h6>Visit Us</h6>
+          123 Main Street<br> Providence, RI 02902<br>123-456-7890
+          <br><br>
+          Open Tuesday-Saturday 9am-5pm
+        </div>
+      </div>
+    </div>
+
+    <div id="about-us-info-phone" class="d-block d-sm-none">
+      <div class="d-flex flex-column">
+        <div id="about-us-phone">
+          <h6>About Us</h6> Moss Hair Salon is the premier hair salon of Rhode Island, consistently recognized by Elle Magazine as one of the top hair salons in America. We offer a full suite of hair styling, cutting, and coloring services.
+        </div>
+        <div id="address-phone">
+          <h6>Visit Us</h6>
+          123 Main Street<br> Providence, RI 02902<br>123-456-7890<br>
+          Open Tuesday-Saturday 9am-5pm
+          <br><br>
+          <button type="button" class="btn btn-light btn-outline-dark social-btn"><img class="social" src="instagram.png"></button>
+          <button type="button" class="btn btn-light btn-outline-dark social-btn"><img class="social" src="facebook.png"></button>
+          <button type="button" class="btn btn-light btn-outline-dark social-btn"><img class="social" src="yelp.png"></button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
